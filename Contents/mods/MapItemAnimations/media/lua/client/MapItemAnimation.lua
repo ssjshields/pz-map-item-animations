@@ -14,6 +14,11 @@ require "TimedActions/ISReadWorldMap"
 ---@class ISReadWorldMap : ISBaseTimedAction
 ReadAMap = ISReadWorldMap:derive("ReadAMap")
 
+function ReadAMap:isValid()
+    if getCore():getGameMode() == "Tutorial" then return false end
+    return true
+end
+
 function ReadAMap:new(character, map)
     local o = ISReadWorldMap.new(self, character)
     o.map = map
