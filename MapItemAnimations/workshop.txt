@@ -1,0 +1,6 @@
+version=1
+id=3217087283
+title=Map Item Animations
+description=test
+tags=Build 41;Map;Misc
+visibility=public
